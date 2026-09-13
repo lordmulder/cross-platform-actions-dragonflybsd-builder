@@ -95,7 +95,7 @@ jobs:
             echo 'env | sort:'; env | sort
             [ "`uname -s`" = 'DragonFly' ]
             [ "`uname -m`" = '${{ matrix.architecture.uname || matrix.architecture.name }}' ] || [ "`uname -p`" = '${{ matrix.architecture.uname || matrix.architecture.name }}' ]
-            [ "`pwd`" = '/home/runner/work/dragonflybsd-builder/dragonflybsd-builder' ]
+            [ "`pwd`" = '/home/runner/work/cross-platform-actions-dragonflybsd-builder/cross-platform-actions-dragonflybsd-builder' ]
             [ "`hostname`" = 'runnervmg1sw1.local' ]
             # The image configures the interface statically, so no DHCP
             # client runs at all and the routing table is whatever rc.conf
